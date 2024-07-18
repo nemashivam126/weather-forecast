@@ -1,7 +1,6 @@
 let cityName = 'Indore';
-async function FetchData() {
-    const { default: WEATHER_API_KEY } = await import('./config.js');
-    fetch(`https://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=${cityName}`)
+function FetchData() {
+    fetch(`https://api.weatherapi.com/v1/current.json?key=4034f954eeaf4c8291b131749231108&q=${cityName}`)
         .then(res => res.json())
         .then(weather => {
             // console.log(weather);
